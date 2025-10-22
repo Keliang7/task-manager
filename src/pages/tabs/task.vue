@@ -6,7 +6,6 @@ definePage({
   style: {
     navigationBarTitleText: 'Home',
   },
-  type: 'home',
 })
 
 /**

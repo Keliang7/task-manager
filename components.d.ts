@@ -9,7 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppLinks: typeof import('./src/components/AppLinks.vue')['default']
     AppLogos: typeof import('./src/components/AppLogos.vue')['default']
+    HomeTop: typeof import('./src/components/HomeTop/HomeTop.vue')['default']
     InputEntry: typeof import('./src/components/InputEntry.vue')['default']
+    TaskList: typeof import('./src/components/TaskList/TaskList.vue')['default']
     TestHttp: typeof import('./src/components/TestHttp.vue')['default']
     UBadge: typeof import('uview-pro/components/u-badge/u-badge.vue')['default']
     UGap: typeof import('uview-pro/components/u-gap/u-gap.vue')['default']

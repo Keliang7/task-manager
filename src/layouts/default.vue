@@ -30,7 +30,7 @@ const isBack = computed(() => {
 const current = ref<number>(0)
 
 onMounted(() => {
-  getRemoteTabbar(true)
+  getRemoteTabbar()
 })
 </script>
 
@@ -45,6 +45,6 @@ onMounted(() => {
       <slot />
     </view>
     <!-- hide-tab-bar 我已经配置了 app.json/tabbar/custom 所以这里不需要它调用隐藏 -->
-    <u-tabbar v-model="current" :show="!isBack" :list="useList" :hide-tab-bar="false" />
+    <u-tabbar v-model="current" :list="useList" :hide-tab-bar="false" />
   </view>
 </template>

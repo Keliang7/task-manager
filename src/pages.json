@@ -1,11 +1,11 @@
 {
   "pages": [
     {
-      "path": "pages/tabs/task",
+      "path": "pages/tabs/home",
       "type": "home",
       "layout": "default",
       "style": {
-        "navigationBarTitleText": "Home"
+        "navigationBarTitleText": "home"
       }
     },
     {
@@ -41,14 +41,6 @@
       }
     },
     {
-      "path": "pages/tabs/home",
-      "type": "page",
-      "layout": "default",
-      "style": {
-        "navigationBarTitleText": "home"
-      }
-    },
-    {
       "path": "pages/tabs/msg",
       "type": "page",
       "layout": "default",
@@ -62,6 +54,14 @@
       "layout": "default",
       "style": {
         "navigationBarTitleText": "review"
+      }
+    },
+    {
+      "path": "pages/tabs/task",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "Home"
       }
     },
     {

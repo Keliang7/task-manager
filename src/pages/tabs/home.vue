@@ -6,6 +6,7 @@ definePage({
   style: {
     navigationBarTitleText: 'home',
   },
+  type: 'home',
 })
 /**
  * 分享
@@ -20,6 +21,8 @@ onShareAppMessage(() => {
 
 <template>
   <view class="u-bg-#ededed">
-    home
+    <HomeTop />
+    123
+    <TaskList />
   </view>
 </template>

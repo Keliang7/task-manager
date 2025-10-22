@@ -27,4 +27,10 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  shortcuts: [
+    ['a-c', 'items-center'],
+    ['j-c', 'justify-center'],
+    ['j-a', 'justify-around'],
+    ['j-b', 'justify-between'],
+  ],
 })
