@@ -1,0 +1,120 @@
+{
+  "pages": [
+    {
+      "path": "pages/tabs/task",
+      "type": "home",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "Home"
+      }
+    },
+    {
+      "path": "pages/admin/create",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "create"
+      }
+    },
+    {
+      "path": "pages/admin/share",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "create"
+      }
+    },
+    {
+      "path": "pages/tabs/data",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "data"
+      }
+    },
+    {
+      "path": "pages/tabs/employee",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "employee"
+      }
+    },
+    {
+      "path": "pages/tabs/home",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "home"
+      }
+    },
+    {
+      "path": "pages/tabs/msg",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "msg"
+      }
+    },
+    {
+      "path": "pages/tabs/review",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "review"
+      }
+    },
+    {
+      "path": "pages/user/submit",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "submit"
+      }
+    }
+  ],
+  "homePage": "page/tabs/task",
+  "globalStyle": {
+    "backgroundColor": "@bgColor",
+    "backgroundColorBottom": "@bgColorBottom",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "navigationBarTitleText": "uView Pro",
+    "navigationStyle": "custom"
+  },
+  "subPackages": [],
+  "tabBar": {
+    "custom": true,
+    "color": "#909399",
+    "selectedColor": "#303133",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/tabs/task",
+        "text": "任务"
+      },
+      {
+        "pagePath": "pages/tabs/review",
+        "text": "审核"
+      },
+      {
+        "pagePath": "pages/tabs/data",
+        "text": "数据"
+      },
+      {
+        "pagePath": "pages/tabs/employee",
+        "text": "员工"
+      },
+      {
+        "pagePath": "pages/tabs/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabs/msg",
+        "text": "消息"
+      }
+    ]
+  }
+}
