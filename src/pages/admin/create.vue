@@ -20,7 +20,7 @@ onShareAppMessage(() => {
 </script>
 
 <template>
-  <view class="u-bg-#ededed">
+  <view class="u-bg-#ededed h-200vh bg-emerald">
     create
   </view>
 </template>
