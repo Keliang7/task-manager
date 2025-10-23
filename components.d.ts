@@ -17,6 +17,7 @@ declare module 'vue' {
     UButton: typeof import('uview-pro/components/u-button/u-button.vue')['default']
     UGap: typeof import('uview-pro/components/u-gap/u-gap.vue')['default']
     UIcon: typeof import('uview-pro/components/u-icon/u-icon.vue')['default']
+    UInput: typeof import('uview-pro/components/u-input/u-input.vue')['default']
     UNavbar: typeof import('uview-pro/components/u-navbar/u-navbar.vue')['default']
     UTabbar: typeof import('uview-pro/components/u-tabbar/u-tabbar.vue')['default']
   }

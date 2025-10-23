@@ -3,7 +3,8 @@ import type { RequestConfig, RequestInterceptor, RequestMeta } from 'uview-pro'
 // 示例：演示如何使用token
 const token = ''
 // 演示
-const baseUrl = 'http://localhost:3000'
+// const baseUrl = 'http://localhost:3000'
+const baseUrl = 'http://192.168.21.173:3000'
 // 演示
 function logout() {
   return new Promise((resolve) => {

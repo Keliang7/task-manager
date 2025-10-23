@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onShareAppMessage } from '@dcloudio/uni-app'
 import { ref } from 'vue'
-import { getUserInfo } from '@/api/demo'
+import { getUserInfo, loginApi } from '@/api/demo'
 
 definePage({
   layout: 'default',
@@ -25,6 +25,17 @@ async function getUser() {
   const res = await getUserInfo(1)
   resp.value = res
 }
+
+const userName = ref('')
+const password = ref('')
+const loginInfo = ref<any>('登录信息')
+async function login() {
+  const res = await loginApi({
+    username: userName.value,
+    password: password.value,
+  })
+  loginInfo.value = res
+}
 </script>
 
 <template>
@@ -34,6 +45,17 @@ async function getUser() {
     </u-button>
     <view>
       {{ resp }}
+    </view>
+    <view class="bg-green-400">
+      <u-input v-model="userName" type="text" :border="true" />
+
+      <u-input v-model="password" type="text" :border="true" />
+      <u-button @click="login">
+        登录
+      </u-button>
+      <view>
+        {{ loginInfo }}
+      </view>
     </view>
     <HomeTop />
     123
