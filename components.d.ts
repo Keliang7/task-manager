@@ -14,6 +14,7 @@ declare module 'vue' {
     TaskList: typeof import('./src/components/TaskList/TaskList.vue')['default']
     TestHttp: typeof import('./src/components/TestHttp.vue')['default']
     UBadge: typeof import('uview-pro/components/u-badge/u-badge.vue')['default']
+    UButton: typeof import('uview-pro/components/u-button/u-button.vue')['default']
     UGap: typeof import('uview-pro/components/u-gap/u-gap.vue')['default']
     UIcon: typeof import('uview-pro/components/u-icon/u-icon.vue')['default']
     UNavbar: typeof import('uview-pro/components/u-navbar/u-navbar.vue')['default']

@@ -3,7 +3,7 @@ import type { RequestConfig, RequestInterceptor, RequestMeta } from 'uview-pro'
 // 示例：演示如何使用token
 const token = ''
 // 演示
-const baseUrl = '/static/json'
+const baseUrl = 'http://localhost:3000'
 // 演示
 function logout() {
   return new Promise((resolve) => {
