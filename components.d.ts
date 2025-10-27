@@ -20,6 +20,9 @@ declare module 'vue' {
     UIcon: typeof import('uview-pro/components/u-icon/u-icon.vue')['default']
     UImage: typeof import('uview-pro/components/u-image/u-image.vue')['default']
     UInput: typeof import('uview-pro/components/u-input/u-input.vue')['default']
+    ULine: typeof import('uview-pro/components/u-line/u-line.vue')['default']
+    ULoading: typeof import('uview-pro/components/u-loading/u-loading.vue')['default']
+    ULoadmore: typeof import('uview-pro/components/u-loadmore/u-loadmore.vue')['default']
     UNavbar: typeof import('uview-pro/components/u-navbar/u-navbar.vue')['default']
     UTabbar: typeof import('uview-pro/components/u-tabbar/u-tabbar.vue')['default']
   }
