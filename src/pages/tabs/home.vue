@@ -19,11 +19,36 @@ onShareAppMessage(() => {
     path: '/pages/tabs/home',
   }
 })
-const resp = ref<any>(null)
+// const resp = ref<any>(null)
+const userInfo = ref<any>(null)
 
 async function getUser() {
-  const res = await getUserInfo(1)
-  resp.value = res
+  // const res = await getUserInfo(1)
+  // resp.value = res
+  // uni.getUserProfile({
+  //   desc: '用于完善用户资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+  //   success: (res) => {
+  //     resp.value = JSON.stringify(res)
+  //     userInfo.value = res.userInfo
+  //     console.log('成功', res)
+  //   },
+  //   fail: (err) => {
+  //     resp.value = err
+  //     console.log('失败', err)
+  //   },
+  // })
+
+  // uni.login({
+  //   provider: 'weixin',
+  //   success(res) {
+  //     resp.value = res
+  //     console.log('成功', res)
+  //   },
+  //   fail(err) {
+  //     resp.value = err
+  //     console.log('失败', err)
+  //   },
+  // })
 }
 
 const userName = ref('')
@@ -44,7 +69,11 @@ async function login() {
       click
     </u-button>
     <view>
-      {{ resp }}
+      <view>
+        {{ userInfo?.nickName || '--' }}
+      </view>
+
+      <u-image :src="userInfo?.avatarUrl" />
     </view>
     <view class="bg-green-400">
       <u-input v-model="userName" type="text" :border="true" />
@@ -58,7 +87,6 @@ async function login() {
       </view>
     </view>
     <HomeTop />
-    123
     <TaskList />
   </view>
 </template>
